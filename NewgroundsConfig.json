@@ -1,0 +1,29 @@
+{
+  "name": "Newgrounds",
+  "description": "Newgrounds movies and creators for Grayjay",
+  "author": "Blazeape595692",
+  "authorUrl": "https://github.com/Blazeape595692",
+  "sourceUrl": "https://raw.githubusercontent.com/Blazeape595692/NewgroundsPlugin/refs/heads/main/NewgroundsConfig.json",
+  "repositoryUrl": "https://github.com/Blazeape595692/NewgroundsPlugin",
+  "scriptUrl": "./NewgroundsScript.js",
+  "version": 10,
+  "iconUrl": "./Newgrounds.png",
+  "id": "4f480e7b-4161-4c6b-8864-fb6b8730b695",
+  "scriptSignature": "",
+  "scriptPublicKey": "",
+  "packages": ["Http", "DOMParser"],
+  "authentication": {
+    "loginUrl": "https://www.newgrounds.com/passport/mode/iframe",
+    "userAgent": "Mozilla/5.0 (Linux; Android 12) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.230 Mobile Safari/537.36",
+    "cookiesToFind": ["passport-auth"],
+    "loginWarning": "Does not exit automatically"
+  },
+  "allowEval": false,
+  "allowUrls": [
+    "newgrounds.com",
+    "www.newgrounds.com",
+    "*.newgrounds.com",
+    "ngfiles.com",
+    "*.ngfiles.com"
+  ]
+}
