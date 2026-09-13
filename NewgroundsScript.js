@@ -90,7 +90,7 @@ function parseDuration(value) {
 }
 
 function parseDocument(html) {
-    return new DOMParser().parseFromString(html, "text/html");
+    return domParser.parseFromString(html, "text/html");
 }
 
 function nodeAttr(node, name) {
