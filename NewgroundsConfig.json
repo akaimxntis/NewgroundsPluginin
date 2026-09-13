@@ -7,7 +7,7 @@
   "sourceUrl": "https://raw.githubusercontent.com/Blazeape595692/NewgroundsPlugin/main/NewgroundsConfig.json",
   "repositoryUrl": "https://github.com/Blazeape595692/NewgroundsPlugin",
   "scriptUrl": "./NewgroundsScript.js",
-  "version": 11,
+  "version": 12,
   "iconUrl": "./Newgrounds.png",
   "id": "4f480e7b-4161-4c6b-8864-fb6b8730b695",
   "scriptSignature": "",
@@ -31,8 +31,11 @@
     "completionUrl": "https://www.newgrounds.com/*",
     "userAgent": "Mozilla/5.0 (Linux; Android 12) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.230 Mobile Safari/537.36",
     "cookiesToFind": [
-      "passport-auth"
+      "passport-auth",
+      "NG_GG_username",
+      "ng_user0"
     ],
-    "loginWarning": "After logging in, return to Grayjay if the login window does not close automatically."
+    "loginWarning": "After logging in, return to Grayjay if the login window does not close automatically.",
+    "cookiesExclOthers": false
   }
 }
