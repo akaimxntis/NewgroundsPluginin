@@ -7,14 +7,13 @@
   "sourceUrl": "https://raw.githubusercontent.com/Blazeape595692/NewgroundsPlugin/main/NewgroundsConfig.json",
   "repositoryUrl": "https://github.com/Blazeape595692/NewgroundsPlugin",
   "scriptUrl": "./NewgroundsScript.js",
-  "version": 12,
+  "version": 13,
   "iconUrl": "./Newgrounds.png",
   "id": "4f480e7b-4161-4c6b-8864-fb6b8730b695",
   "scriptSignature": "",
   "scriptPublicKey": "",
   "packages": [
-    "Http",
-    "DOMParser"
+    "Http"
   ],
   "allowEval": false,
   "allowUrls": [
@@ -23,7 +22,9 @@
     "*.newgrounds.com",
     "ngfiles.com",
     "*.ngfiles.com",
-    "ungrounded.net",
+    "img.ngfiles.com",
+    "picon.ngfiles.com",
+    "uploads.ungrounded.net",
     "*.ungrounded.net"
   ],
   "authentication": {
@@ -31,11 +32,41 @@
     "completionUrl": "https://www.newgrounds.com/*",
     "userAgent": "Mozilla/5.0 (Linux; Android 12) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.230 Mobile Safari/537.36",
     "cookiesToFind": [
-      "passport-auth",
-      "NG_GG_username",
-      "ng_user0"
+      "passport-auth"
     ],
-    "loginWarning": "After logging in, return to Grayjay if the login window does not close automatically.",
     "cookiesExclOthers": false
-  }
+  },
+  "authenticationDesktop": {
+    "loginUrl": "https://www.newgrounds.com/login",
+    "completionUrl": "https://www.newgrounds.com/*",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36",
+    "cookiesToFind": [
+      "passport-auth"
+    ],
+    "cookiesExclOthers": false,
+    "useMobileEmulation": false
+  },
+  "settings": [
+    {
+      "variable": "preferWebm",
+      "name": "Prefer WEBM",
+      "description": "Prefer WEBM sources when Newgrounds exposes both WEBM and MP4.",
+      "type": "Boolean",
+      "default": "false"
+    },
+    {
+      "variable": "largeThumbnails",
+      "name": "Use larger thumbnails",
+      "description": "Use the full poster image when available instead of the compact card thumbnail.",
+      "type": "Boolean",
+      "default": "true"
+    },
+    {
+      "variable": "safeOnly",
+      "name": "Hide adult videos",
+      "description": "Hide results marked as 18+ when the page exposes an adult rating.",
+      "type": "Boolean",
+      "default": "false"
+    }
+  ]
 }
