@@ -3,7 +3,8 @@
   "description": "Newgrounds movies and creators for Grayjay",
   "author": "Blazeape595692",
   "authorUrl": "https://github.com/Blazeape595692",
-  "sourceUrl": "https://raw.githubusercontent.com/Blazeape595692/NewgroundsPlugin/refs/heads/main/NewgroundsConfig.json",
+  "platformUrl": "https://www.newgrounds.com",
+  "sourceUrl": "https://raw.githubusercontent.com/Blazeape595692/NewgroundsPlugin/main/NewgroundsConfig.json",
   "repositoryUrl": "https://github.com/Blazeape595692/NewgroundsPlugin",
   "scriptUrl": "./NewgroundsScript.js",
   "version": 11,
@@ -15,6 +16,16 @@
     "Http",
     "DOMParser"
   ],
+  "allowEval": false,
+  "allowUrls": [
+    "newgrounds.com",
+    "www.newgrounds.com",
+    "*.newgrounds.com",
+    "ngfiles.com",
+    "*.ngfiles.com",
+    "ungrounded.net",
+    "*.ungrounded.net"
+  ],
   "authentication": {
     "loginUrl": "https://www.newgrounds.com/login",
     "completionUrl": "https://www.newgrounds.com/*",
@@ -23,13 +34,5 @@
       "passport-auth"
     ],
     "loginWarning": "After logging in, return to Grayjay if the login window does not close automatically."
-  },
-  "allowEval": false,
-  "allowUrls": [
-    "newgrounds.com",
-    "www.newgrounds.com",
-    "*.newgrounds.com",
-    "ngfiles.com",
-    "*.ngfiles.com"
-  ]
+  }
 }
